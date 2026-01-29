@@ -44,9 +44,13 @@ export const MRT_Table = <TData extends MRT_RowData>({
     getState();
 
   const tableProps = {
-    highlightOnHover: true,
+    highlightOnHover: false,
     horizontalSpacing: density,
+    striped: 'odd',
     verticalSpacing: density,
+    withColumnBorders: false,
+    withRowBorders: false,
+    withTableBorder: false,
     ...parseFromValuesOrFunc(mantineTableProps, { table }),
     ...rest,
   };

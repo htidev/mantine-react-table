@@ -248,7 +248,7 @@ export const tableOptions: TableOption[] = [
   },
   {
     tableOption: 'enableColumnActions',
-    defaultValue: 'true',
+    defaultValue: 'false',
     description: '',
     link: '/docs/guides/column-actions-menu',
     linkText: 'MRT Column Actions Docs',
@@ -318,7 +318,7 @@ export const tableOptions: TableOption[] = [
   },
   {
     tableOption: 'enableDensityToggle',
-    defaultValue: 'true',
+    defaultValue: 'false',
     description: '',
     link: '/docs/guides/density-toggle',
     linkText: 'MRT Density Toggle Docs',
@@ -389,7 +389,7 @@ export const tableOptions: TableOption[] = [
   },
   {
     tableOption: 'enableFullScreenToggle',
-    defaultValue: 'true',
+    defaultValue: 'false',
     description:
       'Enable or disable the full screen toggle feature. Disabling will also hide the full screen toggle button.',
     link: '/docs/guides/full-screen-toggle',
@@ -400,7 +400,7 @@ export const tableOptions: TableOption[] = [
   },
   {
     tableOption: 'enableGlobalFilter',
-    defaultValue: 'true',
+    defaultValue: 'false',
     description: '',
     link: '/docs/guides/global-filtering#disable-global-filter-feature',
     linkText: 'MRT Global Filtering Docs',
@@ -440,7 +440,7 @@ export const tableOptions: TableOption[] = [
   },
   {
     tableOption: 'enableHiding',
-    defaultValue: 'true',
+    defaultValue: 'false',
     description: '',
     link: '/docs/guides/column-hiding',
     linkText: 'MRT Column Hiding Docs',
@@ -481,7 +481,7 @@ export const tableOptions: TableOption[] = [
   },
   {
     tableOption: 'enablePagination',
-    defaultValue: 'true',
+    defaultValue: 'false',
     description: '',
     link: '',
     linkText: '',
@@ -892,7 +892,7 @@ export const tableOptions: TableOption[] = [
   },
   {
     tableOption: 'initialState',
-    defaultValue: '',
+    defaultValue: "{ density: 'xs' }",
     description:
       'Use this option to optionally pass initial state to the table. This state will be used when resetting various table states either automatically by the table (eg. options.autoResetPagination) or via functions like table.resetRowSelection(). Most reset function allow you optionally pass a flag to reset to a blank/default state instead of the initial state. Table state will not be reset when this object changes, which also means that the initial state object does not need to be stable.',
     link: '/docs/guides/state-management#populate-initial-state',
@@ -1413,7 +1413,8 @@ export const tableOptions: TableOption[] = [
   },
   {
     tableOption: 'mantineTableProps',
-    defaultValue: '',
+    defaultValue:
+      "{ highlightOnHover: false, striped: 'odd', withColumnBorders: false, withRowBorders: false, withTableBorder: false }",
     description: '',
     link: 'https://mantine.dev/core/table/?t=props',
     linkText: 'Mantine Table Docs',

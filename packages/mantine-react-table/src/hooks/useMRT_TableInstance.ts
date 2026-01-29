@@ -112,7 +112,7 @@ export const useMRT_TableInstance = <TData extends MRT_RowData>(
       initialState.columnSizingInfo ?? ({} as MRT_ColumnSizingInfoState),
     );
   const [density, setDensity] = useState<MRT_DensityState>(
-    initialState?.density ?? 'md',
+    initialState?.density ?? 'xs',
   );
   const [draggingColumn, setDraggingColumn] =
     useState<MRT_Column<TData> | null>(initialState.draggingColumn ?? null);
