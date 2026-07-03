@@ -1,8 +1,7 @@
 {
   "include": [
     "src",
-    "@types/node",
-    "stories"
+    "@types/node"
   ],
   "compilerOptions": {
     "declaration": true,

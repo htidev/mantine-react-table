@@ -5,7 +5,6 @@ import classes from './MRT_TableHeadCell.module.css';
 import {
   type CSSProperties,
   type DragEventHandler,
-  type MutableRefObject,
   type ReactNode,
   useMemo,
   useState,
@@ -27,7 +26,7 @@ import {
   type MRT_TableInstance,
 } from '../../types';
 import { parseCSSVarId } from '../../utils/style.utils';
-import { parseFromValuesOrFunc } from '../../utils/utils';
+import { assignRef, parseFromValuesOrFunc } from '../../utils/utils';
 import { MRT_ColumnActionMenu } from '../menus/MRT_ColumnActionMenu';
 
 interface Props<TData extends MRT_RowData> extends TableThProps {
@@ -207,9 +206,7 @@ export const MRT_TableHeadCell = <TData extends MRT_RowData>({
       ref={(node: HTMLTableCellElement) => {
         if (node) {
           tableHeadCellRefs.current[column.id] = node;
-          (
-            isHoveredHeadCellRef as MutableRefObject<HTMLTableCellElement>
-          ).current = node;
+          assignRef(isHoveredHeadCellRef, node);
           if (columnDefType !== 'group') {
             columnVirtualizer?.measureElement?.(node);
           }

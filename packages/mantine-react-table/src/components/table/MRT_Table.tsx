@@ -43,7 +43,7 @@ export const MRT_Table = <TData extends MRT_RowData>({
   const { columnSizing, columnSizingInfo, columnVisibility, density } =
     getState();
 
-  const tableProps = {
+  const tableProps: TableProps = {
     highlightOnHover: false,
     horizontalSpacing: density,
     striped: 'odd',

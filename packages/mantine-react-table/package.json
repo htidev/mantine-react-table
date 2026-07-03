@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "name": "@htidev/mantine-react-table",
   "description": "A fully featured Mantine implementation of TanStack React Table V8, written from the ground up in TypeScript.",
@@ -56,7 +56,7 @@
     }
   ],
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "scripts": {
     "build": "pnpm lib:build",
@@ -77,9 +77,9 @@
     "@babel/core": "^7.25.8",
     "@babel/preset-react": "^7.25.7",
     "@faker-js/faker": "^9.0.3",
-    "@mantine/core": "8.3.13",
-    "@mantine/dates": "8.3.13",
-    "@mantine/hooks": "8.3.13",
+    "@mantine/core": "9.0.2",
+    "@mantine/dates": "9.0.2",
+    "@mantine/hooks": "9.0.2",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -96,8 +96,8 @@
     "@storybook/testing-library": "^0.2.2",
     "@tabler/icons-react": "3.19.0",
     "@types/node": "^22.7.5",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.8.1",
     "@typescript-eslint/parser": "^8.8.1",
     "@vitejs/plugin-react": "^4.3.2",
@@ -105,14 +105,13 @@
     "dayjs": "^1.11.13",
     "eslint": "^8.57.0",
     "eslint-plugin-perfectionist": "^3.8.0",
-    "mantine-contextmenu": "^7.12.2",
     "postcss": "^8.4.47",
     "postcss-preset-mantine": "^1.17.0",
     "postcss-simple-vars": "^7.0.1",
     "prop-types": "^15.8.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-is": "^18.3.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-is": "^19.2.0",
     "rollup": "^4.24.0",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-delete": "^2.1.0",
@@ -133,13 +132,13 @@
     "@tanstack/react-virtual": "3.11.2"
   },
   "peerDependencies": {
-    "@mantine/core": "^8.3.0",
-    "@mantine/dates": "^8.3.0",
-    "@mantine/hooks": "^8.3.0",
+    "@mantine/core": "^9.0.2",
+    "@mantine/dates": "^9.0.2",
+    "@mantine/hooks": "^9.0.2",
     "@tabler/icons-react": ">=2.23.0",
     "clsx": ">=2",
     "dayjs": ">=1.11",
-    "react": ">=18.0",
-    "react-dom": ">=18.0"
+    "react": ">=19.2.0",
+    "react-dom": ">=19.2.0"
   }
 }

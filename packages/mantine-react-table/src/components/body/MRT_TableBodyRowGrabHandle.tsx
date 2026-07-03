@@ -12,7 +12,7 @@ import { MRT_GrabHandleButton } from '../buttons/MRT_GrabHandleButton';
 
 interface Props<TData extends MRT_RowData> extends ActionIconProps {
   row: MRT_Row<TData>;
-  rowRef: RefObject<HTMLTableRowElement>;
+  rowRef?: RefObject<HTMLTableRowElement | null>;
   table: MRT_TableInstance<TData>;
 }
 
@@ -36,7 +36,9 @@ export const MRT_TableBodyRowGrabHandle = <TData extends MRT_RowData>({
 
   const handleDragStart = (event: DragEvent<HTMLButtonElement>) => {
     actionIconProps?.onDragStart?.(event);
-    event.dataTransfer.setDragImage(rowRef.current as HTMLElement, 0, 0);
+    if (rowRef?.current) {
+      event.dataTransfer.setDragImage(rowRef.current, 0, 0);
+    }
     table.setDraggingRow(row as any);
   };
 

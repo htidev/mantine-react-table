@@ -19,7 +19,7 @@ import { getAllLeafColumnDefs, getColumnId } from './column.utils';
 export const flexRender = _flexRender as (
   Comp: Renderable<any>,
   props: any,
-) => JSX.Element | ReactNode;
+) => React.ReactElement | ReactNode;
 
 export function createMRTColumnHelper<
   TData extends MRT_RowData,

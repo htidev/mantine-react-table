@@ -1,5 +1,3 @@
-import { type RefObject } from 'react';
-
 import { MRT_TableBodyRowGrabHandle } from '../../components/body/MRT_TableBodyRowGrabHandle';
 import {
   type MRT_ColumnDef,
@@ -15,7 +13,7 @@ export const getMRT_RowDragColumnDef = <TData extends MRT_RowData>(
     Cell: ({ row, rowRef, table }) => (
       <MRT_TableBodyRowGrabHandle
         row={row}
-        rowRef={rowRef as RefObject<HTMLTableRowElement>}
+        rowRef={rowRef}
         table={table}
       />
     ),
